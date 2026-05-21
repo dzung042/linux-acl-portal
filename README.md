@@ -57,24 +57,17 @@ Reads directly from:
 
 filesystem ACLs
 ## 🏗 Architecture
+```
 Linux System (Source of Truth)
-
         ↓
-
 Users / Groups (OS Level)
-
         ↓
-
 ACL Engine (setfacl / getfacl)
-
         ↓
-
 Projects (/srv/projects)
-
         ↓
-
 Web Portal (Flask UI)
-
+```
 ## 🔧 How It Works
 
 When a group is attached to a project, the system automatically applies:
