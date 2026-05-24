@@ -111,6 +111,13 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install flask
+# Create folder for project
+mkdir -p /srv/projects
+chmod 711 /srv
+chmod 711 /srv/projects
+# check permission
+namei -l /srv/projects
+# change BASE_PROJECT_PATH in manager.py to correct folder
 
 python3 manager.py
 ```
